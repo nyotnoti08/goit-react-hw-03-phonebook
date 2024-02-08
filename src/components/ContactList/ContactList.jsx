@@ -6,7 +6,7 @@ export const ContactList = ({ filterContact, deleteContact }) => {
   const filteredContacts = filterContact();
 
   return (
-    <ul>
+    <ul className={css.listContainer}>
       {filteredContacts.map(filteredContact => (
         <ContactListItem
           key={filteredContact.id}
